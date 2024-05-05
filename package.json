@@ -4,7 +4,7 @@
   "description": "general utilities for armazilla software development",
   "main": "index.js",
   "scripts": {
-    "install": "./bin/build.sh",
+    "postinstall": "./bin/build.sh",
     "clean": "./bin/clean.sh",
     "build": "./bin/build.sh",
     "test": "test"
