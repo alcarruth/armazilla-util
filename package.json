@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "goofi.armazilla.net:/git/armazilla-util"
+    "url": "git@github.com:alcarruth/armazilla-util.git"
   },
   "keywords": [
     "utility"
@@ -22,8 +22,6 @@
     "coffeescript": "^2.3.2",
     "process": "^0.11.10",
     "stacktrace-js": "^2.0.2",
-    "mustache": "^4.2.0",
-    "git-info": "file:../git-info",
-    "pkg-info": "file:../pkg-info"
+    "mustache": "^4.2.0"
   }
 }
