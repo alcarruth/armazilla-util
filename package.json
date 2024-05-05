@@ -1,0 +1,26 @@
+{
+  "name": "armazilla-util",
+  "version": "1.0.0",
+  "description": "general utilities for armazilla software development",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "goofi.armazilla.net:/git/armazilla-util"
+  },
+  "keywords": [
+    "utility"
+  ],
+  "author": "Al Carruth",
+  "license": "ISC",
+  "dependencies": {
+    "coffeescript": "^2.3.2",
+    "process": "^0.11.10",
+    "stacktrace-js": "^2.0.2",
+    "mustache": "^4.2.0",
+    "git-info": "file:../git-info",
+    "pkg-info": "file:../pkg-info"
+  }
+}
