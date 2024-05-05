@@ -3,7 +3,6 @@
 /node_modules/
 /lib/
 /index.js
-/package-lock.json
 
 # Compiled source #
 ###################
