@@ -1,18 +1,13 @@
 # -*- coffee -*-
 #
-#  file: /src/lib/logger.coffee
+#  file: /src/lib/browser_logger.coffee
 #  package: armazilla-util
 # 
 
-if window?
-  inspect = (x, options) ->
-    return x
-else
-  { inspect } = require('util')
 
-stacktrace = require('./stacktrace')
+stacktrace = require('stacktrace-js')
 
-class Logger
+class Browser_Logger
 
   constructor: ({ obj, options, threshold }) ->
     @owner_id = obj?.id || null
@@ -25,7 +20,7 @@ class Logger
     function_name = (await stacktrace.get())[2].functionName
     console.log("\n#{type}#{function_name}():")
     for x in xs
-      console.log(inspect(x, @options))
+      console.log(x, @options)
     return undefined
 
   log_level: (level, xs...) =>
@@ -45,4 +40,4 @@ class Logger
     @log(xs, 'ERROR: ')
 
 
-exports.Logger = Logger      
+exports.Browser_Logger = Browser_Logger

@@ -5,12 +5,14 @@
 #
 
 { random_id } = require('./random-id')
-{ Logger } = require('./logger')
 { normalize_url } = require('./normalize-url')
+{ Logger } = require('./logger')
+{ Browser_Logger } = require('./browser_logger')
 
 module.exports = {
   random_id
-  Logger
   normalize_url
+  Logger
+  Browser_Logger
 }
 

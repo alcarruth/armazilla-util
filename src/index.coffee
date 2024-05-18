@@ -4,7 +4,17 @@
 #  package: armazilla-util
 #
 
-lib = require('./lib')
+{
+  random_id
+  normalize_url
+  Logger
+  Browser_Logger
+  #
+} = require('./lib')
 
-module.exports = lib
-
+module.exports = {
+  random_id
+  normalize_url
+  Logger
+  Browser_Logger
+}
